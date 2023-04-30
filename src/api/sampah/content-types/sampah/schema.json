@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sampahs",
+  "info": {
+    "singularName": "sampah",
+    "pluralName": "sampahs",
+    "displayName": "sampah"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_sampah": {
+      "type": "string"
+    },
+    "harga_sampah": {
+      "type": "integer"
+    },
+    "gambar_sampah": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

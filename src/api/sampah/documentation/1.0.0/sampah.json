@@ -1,5 +1,5 @@
 {
-  "/sites": {
+  "/sampahs": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SiteListResponse"
+                "$ref": "#/components/schemas/SampahListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Site"
+        "Sampah"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/sites"
+      "operationId": "get/sampahs"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SiteResponse"
+                "$ref": "#/components/schemas/SampahResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Site"
+        "Sampah"
       ],
       "parameters": [],
-      "operationId": "post/sites",
+      "operationId": "post/sampahs",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/SiteRequest"
+              "$ref": "#/components/schemas/SampahRequest"
             }
           }
         }
       }
     }
   },
-  "/sites/{id}": {
+  "/sampahs/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SiteResponse"
+                "$ref": "#/components/schemas/SampahResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Site"
+        "Sampah"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/sites/{id}"
+      "operationId": "get/sampahs/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SiteResponse"
+                "$ref": "#/components/schemas/SampahResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Site"
+        "Sampah"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/sites/{id}",
+      "operationId": "put/sampahs/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/SiteRequest"
+              "$ref": "#/components/schemas/SampahRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Site"
+        "Sampah"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/sites/{id}"
+      "operationId": "delete/sampahs/{id}"
     }
   }
 }
