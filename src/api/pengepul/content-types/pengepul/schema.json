@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pengepuls",
+  "info": {
+    "singularName": "pengepul",
+    "pluralName": "pengepuls",
+    "displayName": "Pengepul",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_pengepul": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "nomor_telepon": {
+      "type": "biginteger"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

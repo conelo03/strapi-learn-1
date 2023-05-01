@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sampah",
     "pluralName": "sampahs",
-    "displayName": "sampah"
+    "displayName": "sampah",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,24 @@
       "type": "integer"
     },
     "gambar_sampah": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "stok_sampah": {
+      "type": "integer"
+    },
+    "transaksis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaksi.transaksi",
+      "mappedBy": "sampah"
     }
   }
 }

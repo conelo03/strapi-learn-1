@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transaksis",
+  "info": {
+    "singularName": "transaksi",
+    "pluralName": "transaksis",
+    "displayName": "Transaksi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hasil": {
+      "type": "integer"
+    },
+    "nasabah": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nasabah.nasabah",
+      "inversedBy": "transaksis"
+    },
+    "sampah": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sampah.sampah",
+      "inversedBy": "transaksis"
+    },
+    "berat": {
+      "type": "decimal"
+    },
+    "harga": {
+      "type": "integer"
+    },
+    "petugas_lapangan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::petugas-lapangan.petugas-lapangan",
+      "inversedBy": "transaksis"
+    }
+  }
+}

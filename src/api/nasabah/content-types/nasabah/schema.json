@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nasabahs",
+  "info": {
+    "singularName": "nasabah",
+    "pluralName": "nasabahs",
+    "displayName": "Nasabah",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_nasabah": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "text"
+    },
+    "nomor_telepon": {
+      "type": "biginteger"
+    },
+    "jenis_nasabah": {
+      "type": "enumeration",
+      "enum": [
+        "individu",
+        "kelompok"
+      ]
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "transaksis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaksi.transaksi",
+      "mappedBy": "nasabah"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "saldo": {
+      "type": "integer"
+    }
+  }
+}
