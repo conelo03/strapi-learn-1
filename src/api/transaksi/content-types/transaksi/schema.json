@@ -33,10 +33,10 @@
     "harga": {
       "type": "integer"
     },
-    "petugas_lapangan": {
+    "pegawai": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::petugas-lapangan.petugas-lapangan",
+      "target": "api::pegawai.pegawai",
       "inversedBy": "transaksis"
     }
   }

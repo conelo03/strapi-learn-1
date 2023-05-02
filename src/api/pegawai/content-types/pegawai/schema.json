@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pegawais",
+  "info": {
+    "singularName": "pegawai",
+    "pluralName": "pegawais",
+    "displayName": "Pegawai",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_pegawai": {
+      "type": "string"
+    },
+    "No_pegawai": {
+      "type": "integer"
+    },
+    "alamat": {
+      "type": "text"
+    },
+    "no_telepon": {
+      "type": "integer"
+    },
+    "Jabatan": {
+      "type": "enumeration",
+      "enum": [
+        "Admin",
+        "Petugas Lapangan",
+        "Kepala Bank Sampah",
+        "Pimpinan LH"
+      ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "transaksis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::transaksi.transaksi",
+      "mappedBy": "pegawai"
+    }
+  }
+}

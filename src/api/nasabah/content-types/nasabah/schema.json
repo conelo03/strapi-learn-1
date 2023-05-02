@@ -19,7 +19,7 @@
       "type": "text"
     },
     "nomor_telepon": {
-      "type": "biginteger"
+      "type": "integer"
     },
     "jenis_nasabah": {
       "type": "enumeration",

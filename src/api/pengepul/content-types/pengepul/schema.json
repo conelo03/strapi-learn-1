@@ -16,7 +16,7 @@
       "type": "string"
     },
     "alamat": {
-      "type": "string"
+      "type": "text"
     },
     "nomor_telepon": {
       "type": "biginteger"
