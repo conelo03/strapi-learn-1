@@ -22,7 +22,7 @@
       "type": "datetime"
     },
     "selesai_lelang": {
-      "type": "time"
+      "type": "datetime"
     },
     "kelipatan_bid": {
       "type": "integer"
@@ -38,6 +38,14 @@
       "relation": "manyToMany",
       "target": "api::pengepul.pengepul",
       "mappedBy": "lelang_rooms"
+    },
+    "status_lelang": {
+      "type": "enumeration",
+      "enum": [
+        "Belum Mulai",
+        "Sedang Berjalan",
+        "Selesai"
+      ]
     }
   }
 }

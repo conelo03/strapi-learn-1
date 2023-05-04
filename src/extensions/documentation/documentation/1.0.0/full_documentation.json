@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-05-04T08:22:28.757Z"
+    "x-generation-date": "2023-05-04T12:12:38.094Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -100,8 +100,7 @@
               },
               "selesai_lelang": {
                 "type": "string",
-                "format": "time",
-                "example": "12:54.000"
+                "format": "date-time"
               },
               "kelipatan_bid": {
                 "type": "integer"
@@ -133,6 +132,14 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "status_lelang": {
+                "type": "string",
+                "enum": [
+                  "Belum Mulai",
+                  "Sedang Berjalan",
+                  "Selesai"
+                ]
               }
             }
           }
@@ -199,8 +206,7 @@
           },
           "selesai_lelang": {
             "type": "string",
-            "format": "time",
-            "example": "12:54.000"
+            "format": "date-time"
           },
           "kelipatan_bid": {
             "type": "integer"
@@ -1587,8 +1593,7 @@
                                       },
                                       "selesai_lelang": {
                                         "type": "string",
-                                        "format": "time",
-                                        "example": "12:54.000"
+                                        "format": "date-time"
                                       },
                                       "kelipatan_bid": {
                                         "type": "integer"
@@ -1728,6 +1733,14 @@
                                           }
                                         }
                                       },
+                                      "status_lelang": {
+                                        "type": "string",
+                                        "enum": [
+                                          "Belum Mulai",
+                                          "Sedang Berjalan",
+                                          "Selesai"
+                                        ]
+                                      },
                                       "createdAt": {
                                         "type": "string",
                                         "format": "date-time"
@@ -1853,6 +1866,14 @@
                 }
               }
             }
+          },
+          "status_lelang": {
+            "type": "string",
+            "enum": [
+              "Belum Mulai",
+              "Sedang Berjalan",
+              "Selesai"
+            ]
           },
           "createdAt": {
             "type": "string",
@@ -3526,8 +3547,7 @@
                                                   },
                                                   "selesai_lelang": {
                                                     "type": "string",
-                                                    "format": "time",
-                                                    "example": "12:54.000"
+                                                    "format": "date-time"
                                                   },
                                                   "kelipatan_bid": {
                                                     "type": "integer"
@@ -3666,6 +3686,14 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "status_lelang": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Belum Mulai",
+                                                      "Sedang Berjalan",
+                                                      "Selesai"
+                                                    ]
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -5405,8 +5433,7 @@
                                                   },
                                                   "selesai_lelang": {
                                                     "type": "string",
-                                                    "format": "time",
-                                                    "example": "12:54.000"
+                                                    "format": "date-time"
                                                   },
                                                   "kelipatan_bid": {
                                                     "type": "integer"
@@ -5545,6 +5572,14 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "status_lelang": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Belum Mulai",
+                                                      "Sedang Berjalan",
+                                                      "Selesai"
+                                                    ]
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -6434,8 +6469,7 @@
                         },
                         "selesai_lelang": {
                           "type": "string",
-                          "format": "time",
-                          "example": "12:54.000"
+                          "format": "date-time"
                         },
                         "kelipatan_bid": {
                           "type": "integer"
@@ -7495,6 +7529,14 @@
                               }
                             }
                           }
+                        },
+                        "status_lelang": {
+                          "type": "string",
+                          "enum": [
+                            "Belum Mulai",
+                            "Sedang Berjalan",
+                            "Selesai"
+                          ]
                         },
                         "createdAt": {
                           "type": "string",
@@ -9193,8 +9235,7 @@
                                                   },
                                                   "selesai_lelang": {
                                                     "type": "string",
-                                                    "format": "time",
-                                                    "example": "12:54.000"
+                                                    "format": "date-time"
                                                   },
                                                   "kelipatan_bid": {
                                                     "type": "integer"
@@ -9333,6 +9374,14 @@
                                                         }
                                                       }
                                                     }
+                                                  },
+                                                  "status_lelang": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Belum Mulai",
+                                                      "Sedang Berjalan",
+                                                      "Selesai"
+                                                    ]
                                                   },
                                                   "createdAt": {
                                                     "type": "string",
@@ -10925,8 +10974,7 @@
                                                               },
                                                               "selesai_lelang": {
                                                                 "type": "string",
-                                                                "format": "time",
-                                                                "example": "12:54.000"
+                                                                "format": "date-time"
                                                               },
                                                               "kelipatan_bid": {
                                                                 "type": "integer"
@@ -11065,6 +11113,14 @@
                                                                     }
                                                                   }
                                                                 }
+                                                              },
+                                                              "status_lelang": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                  "Belum Mulai",
+                                                                  "Sedang Berjalan",
+                                                                  "Selesai"
+                                                                ]
                                                               },
                                                               "createdAt": {
                                                                 "type": "string",
