@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lelang_rooms",
+  "info": {
+    "singularName": "lelang-room",
+    "pluralName": "lelang-rooms",
+    "displayName": "lelang_room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_lelang": {
+      "type": "string"
+    },
+    "keterangan": {
+      "type": "string"
+    },
+    "mulai_lelang": {
+      "type": "datetime"
+    },
+    "selesai_lelang": {
+      "type": "time"
+    },
+    "kelipatan_bid": {
+      "type": "integer"
+    },
+    "pegawais": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pegawai.pegawai",
+      "inversedBy": "lelang_rooms"
+    },
+    "pengepuls": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pengepul.pengepul",
+      "mappedBy": "lelang_rooms"
+    }
+  }
+}

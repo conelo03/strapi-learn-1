@@ -43,6 +43,12 @@
       "relation": "oneToMany",
       "target": "api::transaksi.transaksi",
       "mappedBy": "pegawai"
+    },
+    "lelang_rooms": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lelang-room.lelang-room",
+      "mappedBy": "pegawais"
     }
   }
 }
