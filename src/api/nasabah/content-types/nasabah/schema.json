@@ -58,6 +58,9 @@
       "relation": "manyToOne",
       "target": "api::tarik-saldo.tarik-saldo",
       "inversedBy": "nasabahs"
+    },
+    "no_nasabah": {
+      "type": "integer"
     }
   }
 }

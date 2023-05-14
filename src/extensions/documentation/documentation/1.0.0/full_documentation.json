@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-05-14T13:41:53.235Z"
+    "x-generation-date": "2023-05-14T14:00:33.420Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1293,6 +1293,9 @@
                                                       }
                                                     }
                                                   },
+                                                  "no_nasabah": {
+                                                    "type": "integer"
+                                                  },
                                                   "createdAt": {
                                                     "type": "string",
                                                     "format": "date-time"
@@ -2110,6 +2113,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "no_nasabah": {
+                "type": "integer"
               }
             }
           }
@@ -3349,6 +3355,9 @@
                                         }
                                       }
                                     },
+                                    "no_nasabah": {
+                                      "type": "integer"
+                                    },
                                     "createdAt": {
                                       "type": "string",
                                       "format": "date-time"
@@ -4082,6 +4091,9 @@
                 }
               }
             }
+          },
+          "no_nasabah": {
+            "type": "integer"
           },
           "createdAt": {
             "type": "string",
@@ -5342,6 +5354,9 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "no_nasabah": {
+                                      "type": "integer"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -7369,6 +7384,9 @@
                                                                     }
                                                                   }
                                                                 },
+                                                                "no_nasabah": {
+                                                                  "type": "integer"
+                                                                },
                                                                 "createdAt": {
                                                                   "type": "string",
                                                                   "format": "date-time"
@@ -9326,6 +9344,9 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "no_nasabah": {
+                                      "type": "integer"
                                     },
                                     "createdAt": {
                                       "type": "string",
@@ -11850,6 +11871,9 @@
                             }
                           }
                         },
+                        "no_nasabah": {
+                          "type": "integer"
+                        },
                         "createdAt": {
                           "type": "string",
                           "format": "date-time"
@@ -13756,6 +13780,9 @@
                             }
                           }
                         }
+                      },
+                      "no_nasabah": {
+                        "type": "integer"
                       },
                       "createdAt": {
                         "type": "string",
