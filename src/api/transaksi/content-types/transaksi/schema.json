@@ -38,6 +38,9 @@
       "relation": "manyToOne",
       "target": "api::pegawai.pegawai",
       "inversedBy": "transaksis"
+    },
+    "tanggal_penarikan": {
+      "type": "date"
     }
   }
 }

@@ -52,6 +52,12 @@
     },
     "saldo": {
       "type": "integer"
+    },
+    "tarik_saldo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tarik-saldo.tarik-saldo",
+      "inversedBy": "nasabahs"
     }
   }
 }
